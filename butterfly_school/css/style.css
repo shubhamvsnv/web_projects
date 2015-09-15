@@ -1,0 +1,13 @@
+/* CSS Document */
+
+	@font-face {
+    font-family: test';
+    src: url('./fonts/fontawesome-webfont.otf');
+    font-style: normal;
+	}
+
+body {
+   
+    font-family: 'test',arial,sans-serif;
+    line-height: 23px;
+	}

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style type="text/css">
+body {
+	background-color: #FFC;
+	background-image: url(images/bg.gif);
+	background-repeat: repeat;
+	overflow-x:hidden;	
+}
+.avatar {
+    width:150px;
+    margin: 10px;
+    border:5px solid #09F;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+}
+	.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #777;
+}
+
+.fa-facebook:hover {
+    color: #4060A5;
+}
+
+.fa-twitter:hover {
+    color: #00ABE3;
+}
+
+.fa-google-plus:hover {
+    color: #e64522;
+}
+
+.fa-linkedin:hover {
+    color: #0094BC;
+}
+#alinks a { color:#FFF;text-decoration:none;}
+#alinks a:hover { color:#09f;text-decoration:none;}
+#mytext
+{ 
+	font-family: sans-serif;
+}
+</style>
+<head>
+
+<title>DoctorsEnclacve</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+body,td,th {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	overflow-x:hidden;
+}
+
+</style>
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.js"></script>
+</head>
+
+
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" style="background-image:url(images/menu_bg_bar_old.png);background-repeat:repeat-x;">
+	<div class="container"><a href="#" class="navbar-brand"><img src="logos/logo.png" alt="logo" width="46" height="46" style="margin-top:-13px;" class="img-thumbnail";><a href="#" class="navbar-brand hidden-xs">Doctors Enclave</a>
+
+	  
+      
+      
+	  <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse" >
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+        <div class="collapse navbar-collapse navHeaderCollapse">
+        	<ul class="nav navbar-nav navbar-right">
+                <li><a href="about_us.html">Home</a></li>
+              <li><a href="#">About</a></li>
+                <li class="dropdown">
+                	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+                       <ul class="dropdown-menu">
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                            <li><a href="#">Item 4</a></li>
+                            <li><a href="#">Item 5</a></li> 
+                       
+                       </ul>
+                </li>
+                
+                <li><a href="#">Contact Us</a></li>
+               <!--<li>
+               	<a href="#myModal" role="button" class="glyphicon glyphicon-user" data-toggle="modal"></a>
+ 
+
+<div id="myModal" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Confirmation</h4>
+            </div>
+            <div class="modal-body">
+                <p>Do you want to save changes you made to document before closing?</p>
+                <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+               </li>-->
+                
+                <!--<li style="background-color:#09F;">
+                	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-phone-alt">:(012-3456-7890)</i></a>-->
+                       
+               <!--<li class="dropdown hidden-xs">
+                	<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="background-color:#09f;">
+                    <i class="glyphicon glyphicon-user"></i>
+                    &nbsp;Login
+                    </a>
+                       <ul class="dropdown-menu">
+                            <li>
+                           		<div class="container" style="width:250px;">
+    
+    	
+        	
+            	
+                 	
+                    	
+                        <p class="text-justify">
+                        	<form id="contact_form" method="post" role="form">
+        
+                                  <div class="form-group">
+                                 	 <label>User Name :</label>
+                                     <input class="form-control" id="username" name="username" placeholder="User ID" type="text" required   autofocus />
+                                  </div>
+                                  <div class="form-group">
+                                  	<label>Password</label>
+                                    <input class="form-control" id="pass" name="pass" placeholder="Password" type="password" required  />
+                                  </div>
+          
+        
+      
+        
+          
+            <button class="btn btn-info col-xs-12" type="submit">Sign In</button>
+          
+        
+      </form>
+                        </p>
+                        <br/><br/>
+                        <div class="text-center" style="color:#09f;">
+                        <a href="#" class="btn-link" style="color:#09f;">SignUp..!</a>
+                        &nbsp;&nbsp;
+                        <a href="#" class="btn-link" style="color:#09f;">Forgot Password..?</a>
+                        </div>
+                   
+            
+            
+       
+    </div>
+                            </li>
+                            
+
+                       </ul>
+                </li>
+                             
+                            
+
+          </ul>
+                </li>-->
+                
+            
+            </ul>
+            			
+                     
+      </div>
+  </div> 
+</div>
+
+<div id="myCarousel" class="carousel slide hidden-xs" data-ride="carousel" style="width:100%;border-bottom:#c20f3f solid">
+<ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+<div class="carousel-inner" role="listbox">
+    <div class="item active"><img src="images/2.jpg" alt="" style="height:400px;">
+   
+ 
+     
+<div class="col-md-8 col-md-push-2 text-center carousel-caption" style="">
+    
+    
+      <h3 class="text-info" style="color:#FFF;">Director's Message</h3>
+            
+          <p class="text-justify" style="">" Lorem Ipsum is simply dummy textIpsum is simply dummy text of the dIpsum is simply dummy text of the d ofIpsum is simply dummy text of the dIpsum is simply dummy text of the dIpsum is simply dummy text of the d the dummy  a type spedummy text ever since the cimen book. "</p>
+        <a class="btn btn-info pull-right" style="">More Info..</a><br/>
+        
+    
+</div>
+
+
+
+    </div>
+
+    <div class="item">
+      <img src="images/1.jpg" alt="" style="height:400px;">
+      <div class="col-md-8 col-md-push-2 text-center carousel-caption" style="">
+    
+    
+      <h3 class="text-info" style="color:#FFF;">Director's Message</h3>
+            
+          <p class="text-justify" style="">" Lorem Ipsum is simply dummy textIpsum is simply dummy text of the dIpsum is simply dummy text of the d ofIpsum is simply dummy text of the dIpsum is simply dummy text of the dIpsum is simply dummy text of the d the dummy  a type spedummy text ever since the cimen book. "</p>
+        <a class="btn btn-info pull-right" style="">More Info..</a><br/>
+        
+    
+</div>
+    </div>
+
+    <div class="item">
+      <img src="images/3.jpg" alt="" style="height:400px;">
+      <div class="col-md-8 col-md-push-2 text-center carousel-caption" style="">
+    
+      <h3 class="text-info" style="color:#FFF;">Director's Message</h3>
+            
+          <p class="text-justify" style="">" Lorem Ipsum is simply dummy textIpsum is simply dummy text of the dIpsum is simply dummy text of the d ofIpsum is simply dummy text of the dIpsum is simply dummy text of the dIpsum is simply dummy text of the d the dummy  a type spedummy text ever since the cimen book. "</p>
+        <a class="btn btn-info pull-right" style="">More Info..</a><br/>
+        
+    
+</div>
+    </div>
+
+</div>  
+</div>
+ 
+<br>
+
+<div class="col-md-4 text-center img-responsive hidden-xs" style="margin-top:30px;">
+<img src="logos/male-doctor3.png" alt="" width="170" height="170" class="">
+</div>
+<div class="col-md-4 text-right hidden-md hidden-sm hidden-lg img-responsive" style="margin-top:30px;">
+<img src="logos/male-doctor3.png" alt="" width="100" height="100" class="">
+</div>
+
+<div class="col-md-8 img-responsive">
+    <blockquote>
+      <h3 class="text-info text-left" style="color:#09F;">Director's Message</h3>
+            
+          <p class="text-left">" Lorem Ipsum is simply dummy text of the dummy text ever since the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer tookdummy text ever since the  a galley of type and scrambled it to make a type spedummy text ever since the cimen book. "</p>
+        <footer class="text-right" style="color:#09F;">Rob P Wilson</footer>
+    </blockquote>
+
+</div>
+
+<div class="clearfix"></div>
+<div class="container">
+    	<div class="row">
+       	  <div class="col-md-4 col-sm-4">
+            	<div class="panel panel-default">
+                 	<div class="panel-body" style="background-image:url(logos/tri.png);">
+                   	  <div class="page-header text-center" style="color:#09F">
+                        	<h3><span class="glyphicon glyphicon-certificate"></span><br/>
+                       	Vision</h3>
+                            
+                      </div>
+                        <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <div class="text-right">
+                        <a href="#" class="btn btn-sm" style="background-image:url(images/stripes_bg.jpg);color:#FFF;">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+            
+          </div>
+            <div class="col-md-4 col-sm-4">
+            	<div class="panel panel-default" >
+                 	<div class="panel-body" style="background-image:url(logos/tri.png);">
+                   	  <div class="page-header text-center" style="color:#09F">
+                        	<h3><span class="glyphicon glyphicon-bell"></span><br/>
+                       	Mission</h3>
+                            
+                      </div>
+                        <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took book.<br><br><br></p>
+                        <div class="text-right">
+                        <a href="#" class="btn btn-sm" style="background-image:url(images/stripes_bg.jpg);color:#FFF;">Read More...</a>
+                        </div>
+                    </div>
+              </div>
+            
+          </div>
+            
+        	<div class="col-md-4 col-sm-4">
+            	<div class="panel panel-default">
+                 	<div class="panel-body" style="background-image:url(logos/tri.png);">
+                   	  <div class="page-header text-center" style="color:#09F">
+                        	<h3><span class="glyphicon glyphicon-pencil"></span><br/>
+                       	Services</h3>
+                            
+                      </div>
+                        <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <div class="text-right">
+                        <a href="#" class="btn btn-sm" style="background-image:url(images/stripes_bg.jpg);color:#FFF;">Read More...</a>
+                        </div>
+                    </div>
+              </div>
+            
+          </div>
+            
+        </div>
+    
+</div>
+
+			<div class="container img-responsive">
+            
+        <div class="jumbotron" style="border-top-color:#09F;border-top-style:solid;">
+        		<div class="col-md-3 col-md-push-0 col-sm-4 text-center">
+            	 	<img src="logos/medical-9.jpg" alt="" width="150" height="150" class="avatar" >
+             	</div>
+        	<h2 class="text-info" style="color:#09F;">About Company</h2>
+             <p class="text-justify col-md-9">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, took a galley of type and scrambled it to make a type specimen book.</p>	
+             
+             
+             <hr style="background-color:#FFF;width:100%;height:1px;"/>
+             
+             <div class="text-right"><a class="btn btn-info">More Info..</a></div>
+        </div>
+</div>
+<!--<div class="col-md-4 col-sm-4 text-center">
+<img src="logos/male-doctor2.png" alt="" width="170" height="170" class="circleborder">
+</div>-->
+
+<div class="col-lg-10 col-lg-push-1 col-md-10 col-md-push-1 col-sm-10 col-sm-push-1 center-block " style="margin-top:-30px;">
+<img src="images/shade_long.png" class="img-responsive">
+</div>
+
+				<div id="alinks" class="container-fluid" style="background-color:#333;height:auto;color:#FFF;text-decoration:none;padding-top:20px;border-top:#09F solid;background-image:url(images/stressed_linen.jpg);background-repeat:repeat;">
+                
+                            <div class="col-md-4" style="text-align:center;border-right:1px solid #999;height:110px;">
+                            <aside>
+                            <img src="logos/doctorenclave.png" alt="" width="150" height="110">
+                            </aside>
+                            </div>
+                            
+                                <div class="col-md-4" style="border-right:1px solid #999;height:110px;">
+                                    <aside>
+                                    <h4 style="text-align:center;color:#09f;">Links</h4>
+                                    <nav style="text-align:left;margin-left:43%;">
+                                      <a href="#">Home</a><br>
+                                      <a href="#">About</a><br>
+                                      <a href="#">Sevices</a><br>
+                                      <a href="#">Contact Us</a>
+                                    </nav>
+                                    </aside>
+                                </div>
+                                            <div class="col-md-4">
+                                            			<aside><h4 style="text-align:center;color:#09f;">Social</h4>
+                                                        	<div style="text-align:center;">
+                                                              <a href="#"><i class="fa fa-lg fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;
+                                                              <a href="#"><i class="fa fa-lg fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;
+                                                              <a href="#"><i class="fa fa-lg fa-google-plus"></i></a>&nbsp;&nbsp;&nbsp;
+                                                              <a href="#"><i class="fa fa-lg fa-linkedin"></i></a>
+                                                        </div>
+                                                        </aside>
+                                            </div>
+                            </div>
+                </div>
+ 
+<div class="md-col-12" style="background-color:#333;background-image:url(images/stressed_linen.jpg);background-repeat:repeat;"><br></div>
+</body>
+</html>
